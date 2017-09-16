@@ -5,12 +5,15 @@ import Foundation
 
 func getLyrics(artist: String, song: String) -> String {
 
-	let artist = artist.lowercased()
-	let song = song.lowercased()
+	var artist = artist.lowercased()
+	var song = song.lowercased()
 
 	//if (artist.hasPrefix("the"))
 	//	let artist = artist.index(artist.endIndex, offsetBy: -4)
 		
+	artist = artist.replacingOccurrences(of: " ", with: "", options: NSString.CompareOptions.literal, range:nil)
+	song = song.replacingOccurrences(of: " ", with: "", options: NSString.CompareOptions.literal, range:nil)
+
 	let baseURL = "https://www.azlyrics.com/lyrics/"
 	
 	//let temp = song + " by " + artist
@@ -32,15 +35,28 @@ func getLyrics(artist: String, song: String) -> String {
         	let END = "<!-- MxM banner -->"
 	
 		let myStringArray1 : [String] = myHTMLString.components(separatedBy: END)	
-		var temp1 : String = myStringArray1[0]
+		let temp1 : String = myStringArray1[0]
 				
 		let myStringArray2 : [String] = temp1.components(separatedBy: BEG)
-		var temp2 : String = myStringArray2[1]
+		let temp2 : String = myStringArray2[1]
 
-		var temp3 = temp2.replacingOccurrences(of: "</div>", with: "", options: NSString.CompareOptions.literal, range:nil)
-		var lyrics = temp3.replacingOccurrences(of: "<br>", with: "", options: NSString.CompareOptions.literal, range:nil)
+		let temp3 = temp2.replacingOccurrences(of: "</div>", with: "", options: NSString.CompareOptions.literal, range:nil)
+		let lyrics = temp3.replacingOccurrences(of: "<br>", with: "", options: NSString.CompareOptions.literal, range:nil)
 
-		print(lyrics)
+		/*
+		let lyrics : [String] = temp3.components(separatedBy: "<br>")
+
+		for var i in (0..<25) {
+			print(lyrics[i])
+		}
+		*/
+
+		let lyricsCut : [String] = lyrics.components(separatedBy: "\n")
+		for var i in (0..<25) {
+			print(lyricsCut[i])
+		}
+
+		//print(lyrics.count-25)
 	
 	} catch let error {
 		print("Error: \(error)")
@@ -51,4 +67,5 @@ func getLyrics(artist: String, song: String) -> String {
 }
 
 getLyrics(artist: "ChAiNsMoKeRs", song: "cLoSeR")
+//getLyrics(artist: "Taylor Swift", song: "Look What You Made Me Do")
 //print(getLyrics(artist: "CHAINsmoKeRs", song: "ClOsEr"))
