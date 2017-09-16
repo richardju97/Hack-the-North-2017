@@ -13,10 +13,12 @@ print(helloWorld(person: "Richard"))
 
 func getLyrics(artist: String, song: String) -> String {
 
+	let artist = artist.lowercased()
+	let song = song.lowercased()
 	let temp = song + " by " + artist
 
 	return (temp)
 
 }
 
-print(getLyrics(artist: "chainsmokers", song: "closer"))
+print(getLyrics(artist: "CHAINsmoKeRs", song: "ClOsEr"))
