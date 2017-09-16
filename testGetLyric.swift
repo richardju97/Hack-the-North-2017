@@ -17,17 +17,6 @@ func getLyrics(artist: String, song: String) -> String {
 	//return (temp)
 
 	let lyricURL = baseURL + artist + "/" + song + ".html"
-/*
-	do{
-		let unsafe: String = "<p><a href=" + URL + "onclick='stealCookies()'>Link</a></p>"
-		let safe: String = try SwiftSoup.clean(unsafe, Whitelist.basic())!
-		// now: <p><a href="http://example.com/" rel="nofollow">Link</a></p>
-	}catch Exception.Error(let type, let message){
-		print(message)
-	}catch{
-		print("error")
-	}
-*/
 
 	guard let myURL = URL(string: lyricURL)	 else {
 
@@ -48,7 +37,10 @@ func getLyrics(artist: String, song: String) -> String {
 		let myStringArray2 : [String] = temp1.components(separatedBy: BEG)
 		var temp2 : String = myStringArray2[1]
 
-		print(temp2)
+		var temp3 = temp2.replacingOccurrences(of: "</div>", with: "", options: NSString.CompareOptions.literal, range:nil)
+		var lyrics = temp3.replacingOccurrences(of: "<br>", with: "", options: NSString.CompareOptions.literal, range:nil)
+
+		print(lyrics)
 	
 	} catch let error {
 		print("Error: \(error)")
