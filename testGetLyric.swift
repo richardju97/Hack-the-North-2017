@@ -37,12 +37,26 @@ func getLyrics(artist: String, song: String) -> String {
 
 	do {
 		let myHTMLString = try String(contentsOf: myURL, encoding: .ascii)
-		print("HTML : \(myHTMLString)")
+		//print("HTML : \(myHTMLString)")
+		
+		let BEG = "<!-- Usage of azlyrics.com content by any third-party lyrics provider is prohibited by our licensing agreement. Sorry about that. -->"
+        	let END = "<!-- MxM banner -->"
+	
+		let myStringArray1 : [String] = myHTMLString.components(separatedBy: END)	
+		var temp1 : String = myStringArray1[0]
+				
+		let myStringArray2 : [String] = temp1.components(separatedBy: BEG)
+		var temp2 : String = myStringArray2[1]
+
+		print(temp2)
+	
 	} catch let error {
 		print("Error: \(error)")
 	}
 
+
 	return(lyricURL)
 }
 
-print(getLyrics(artist: "CHAINsmoKeRs", song: "ClOsEr"))
+getLyrics(artist: "ChAiNsMoKeRs", song: "cLoSeR")
+//print(getLyrics(artist: "CHAINsmoKeRs", song: "ClOsEr"))
