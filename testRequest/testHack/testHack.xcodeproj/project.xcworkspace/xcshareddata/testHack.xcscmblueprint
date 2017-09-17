@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D5038A811EEA5F4CD3BF053F5538A0DAB57B0B3F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "47B4CEF806712970B720B6850EA0882610CE0C9E" : 9223372036854775807,
+    "D5038A811EEA5F4CD3BF053F5538A0DAB57B0B3F" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E2765F93-5DFE-4F36-B149-F983939C716A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "47B4CEF806712970B720B6850EA0882610CE0C9E" : "",
+    "D5038A811EEA5F4CD3BF053F5538A0DAB57B0B3F" : "Hack-the-North-2017\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "testHack",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "testRequest\/testHack\/testHack.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:scott246\/CSCapstone.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "47B4CEF806712970B720B6850EA0882610CE0C9E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:richardju97\/Hack-the-North-2017.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D5038A811EEA5F4CD3BF053F5538A0DAB57B0B3F"
+    }
+  ]
+}
