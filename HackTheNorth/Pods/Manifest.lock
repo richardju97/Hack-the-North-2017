@@ -1,0 +1,92 @@
+PODS:
+  - Alamofire (4.5.1)
+  - APIKit (3.1.1):
+    - Result (~> 3.0)
+  - BMPlayer (0.9.1):
+    - BMPlayer/Full (= 0.9.1)
+  - BMPlayer/Core (0.9.1)
+  - BMPlayer/Full (0.9.1):
+    - BMPlayer/Core
+    - NVActivityIndicatorView (~> 3.5)
+    - SnapKit (~> 3.2)
+  - FontAwesomeKit (2.2.1):
+    - FontAwesomeKit/Core (= 2.2.1)
+    - FontAwesomeKit/FontAwesome (= 2.2.1)
+    - FontAwesomeKit/FoundationIcons (= 2.2.1)
+    - FontAwesomeKit/IonIcons (= 2.2.1)
+    - FontAwesomeKit/Material (= 2.2.1)
+    - FontAwesomeKit/Octicons (= 2.2.1)
+    - FontAwesomeKit/Zocial (= 2.2.1)
+  - FontAwesomeKit/Core (2.2.1)
+  - FontAwesomeKit/FontAwesome (2.2.1):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/FoundationIcons (2.2.1):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/IonIcons (2.2.1):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/Material (2.2.1):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/Octicons (2.2.1):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/Zocial (2.2.1):
+    - FontAwesomeKit/Core
+  - iTunesSearchAPI (0.4)
+  - Kingfisher (3.13.1)
+  - Material (2.10.2):
+    - Material/Core (= 2.10.2)
+  - Material/Core (2.10.2)
+  - NVActivityIndicatorView (3.7.0):
+    - NVActivityIndicatorView/Presenter (= 3.7.0)
+  - NVActivityIndicatorView/Presenter (3.7.0)
+  - ObjectMapper (2.2.8)
+  - Player (0.7.0)
+  - Realm (2.10.1):
+    - Realm/Headers (= 2.10.1)
+  - Realm/Headers (2.10.1)
+  - RealmSwift (2.10.1):
+    - Realm (= 2.10.1)
+  - Result (3.2.3)
+  - RxCocoa (3.6.1):
+    - RxSwift (~> 3.6)
+  - RxSwift (3.6.1)
+  - SCLAlertView (0.7.0)
+  - SnapKit (3.2.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5)
+  - APIKit
+  - BMPlayer (~> 0.9.1)
+  - FontAwesomeKit
+  - iTunesSearchAPI
+  - Kingfisher (~> 3.9)
+  - Material
+  - ObjectMapper
+  - Player (~> 0.7.0)
+  - Realm
+  - RealmSwift
+  - RxCocoa
+  - RxSwift
+  - SCLAlertView
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  APIKit: 7460983f490d3bde6aaaaa4164d18c9865a6f91d
+  BMPlayer: e68ba160d9c05ea5fffc31d37448aa02433418ab
+  FontAwesomeKit: 3614979b3dbb0ec3f7fac1bd760b91f66c31db67
+  iTunesSearchAPI: 4d144c370591615cd6ce2c45848105ce23cf37b0
+  Kingfisher: ed9707a409cc47fddafbcd12a43a9757e3600af5
+  Material: 8265a77332acfb7872a7fd0f4f2023f080d25d1f
+  NVActivityIndicatorView: d3738df7e2e476aca0ba6bf32a8c9fbcfc33d64b
+  ObjectMapper: 3d571bb5af471c779e1160828cd9ad5c4ef90958
+  Player: f3a8a982e5c4a7cf6a8e4307b16597f2b7a7af0d
+  Realm: fc7a317a5c2c9ba91f5f235ede4e2ea76e9eba0c
+  RealmSwift: 505ed6c15942a2e76f5cfa78a8667cfa997ee75b
+  Result: 128640a6347e8d2ae48b142556739a2d13f90ce6
+  RxCocoa: 84a08739ab186248c7f31ce4ee92d6f8a947d690
+  RxSwift: f9de85ea20cd2f7716ee5409fc13523dc638e4e4
+  SCLAlertView: 8a14ffc40590c619e183eed2298b854385f30be1
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+
+PODFILE CHECKSUM: f708d288e3172faa2801d883b6ef791c7602f417
+
+COCOAPODS: 1.2.0
